@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+</head>
+<body>
+    <center>
+        <h1>FORMULARIOS</h1><hr>
+    </center>
+
+    <form action="index.php" method="get" enctype="text/plain" >
+        <table border="" width="90%" style="margin: auto">
+            <tr>
+                <td>Nombre</td>
+                <td>Descripcion</td>
+                <td>Ejemplo</td>
+            </tr>
+            <tr>
+                <td>1.campo de texto</td>
+                <td>Recopila información</td>
+                <td><input type="text" name="nombre" id="nombre" placeholder="Introduce tu nombre" required value="El diario" maxlength="10"></td>
+            </tr>
+            <tr>
+                <td>2.Campo contraseña</td>
+                <td>Oculta los caractere en contraseñas</td>
+                <td><input type="password" name="" id="" placeholder="Introduce tu contraseña" required ></td>
+            </tr>
+            <tr>
+                <td>3.Casilla de verificación</td>
+                <td>Sirve para seleccionar una opción</td>
+                <td><input type="checkbox" name="" id="" checked><input type="checkbox" name="" id=""></td>
+            </tr>
+            <tr>
+                <td>4.Boton Radio</td>
+                <td>Sirve para seleccionar una opción</td>
+                <td><input type="radio" name="escuela" id="boton1" checked>CECYTEM <br>
+                <input type="radio" name="escuela" id="boton2" >CBT <br>
+                <input type="radio" name="escuela" id="boton3" >CONALEP</td> <br>
+            </tr>
+            <tr>
+                <td>5.CAMPO OCULTO</td>
+                <td>Para ocultar información</td>
+                <td><input type="hidden" name="oculto" id="oculto" value="Mi conraseña es: 123456"></td>
+            </tr>
+            <tr>
+                <td>6.Area de texto</td>
+                <td>Area en donde escribir</td>
+                <td><textarea name="texto" id="texto" cols="30" rows="10" ></textarea></td>
+            </tr>
+            <tr>
+                <td>7.Lista desplegable</td>
+                <td></td>
+                <td><select name="lista" id="lista">
+                    <option value="SAUL">SAUL</option>
+                    <option value="Jose">Jose</option>
+                    <option value="Bruno">Bruno</option>
+                    <option value="Lael">Lael</option>
+                    <option value="Menorcito">Menorcito</option>
+                </select></td>
+            </tr>
+            <tr>
+                <td>8.Boton enviar</td>
+                <td>Boton mas importante</td>
+                <td><input type="submit"></td>
+            </tr>
+            <tr>
+                <td>9.Boton de regresar</td>
+                <td>Restablece todo lo del fórmula</td>
+                <td><input type="reset"></td>
+            </tr>
+
+            <tr>
+                <td>11 Boton de imagen</td>
+                <td>Es una imagen pero en realidad es un boton  </td>
+                <td><input type="image" src="mortal.jpeg"></td>
+            </tr>
+            <tr>
+                <td>12 Boton color</td>
+                <td>Deja elegir el color por mesio de una paleta de colores</td>
+                <td><input type="color"></td>
+            </tr>
+            <tr>
+                <td>13. Boton comando</td>
+                <td>Boton estandar </td>
+                <td><input type="button" value="ACEPTAR"></td>
+            </tr>
+            <tr>
+                <td>14. Campo fecha</td>
+                <td>Permite poner la fecha por dia mes y año </td>
+                <td><input type="date" name="" id=""></td>
+            </tr>
+            <tr>
+                <td>15. Fecha y hora</td>
+                <td>Permite poner la fecha y la hora juntos</td>
+                <td><input type="datetime" name="" id=""></td>
+            </tr>
+            <tr>
+                <td>16. Fecha y hora local</td>
+                <td>O ne la hora y fecha del lugar actual en donde estas</td>
+                <td><input type="datetime-local" name="" id=""></td>
+            </tr>
+            <tr>
+                <td>17. campo email</td>
+                <td>nos permite poner el email y no falten elementos</td>
+                <td><input type="email" name="" id=""></td>
+            </tr>
+            <tr>
+                <td>18. Campo archivo</td>
+                <td>Bonton que Permite poner un archivo seleccionado desde la computadora</td>
+                <td><input type="file" name="" id=""></td>
+            </tr>
+            <tr>
+                <td>19. Mes del año</td>
+                <td>Permite poner mes y año </td>
+                <td><input type="month" name="" id=""></td>
+            </tr>
+            <tr>
+                <td>20. CAMPO NUMERICO</td>
+                <td>Permite poner solo numeros enteros o decimales</td>
+                <td><input type="number" name="" id="" step="0.5" value="0"></td>
+            </tr>
+            <tr>
+                <td>21. Campo slider </td>
+                <td>Es un slider que puede tener distintas funciones</td>
+                <td><input type="range" name="" id="" value="0" min="0" max="100"></td>
+            </tr>
+            <tr>
+                <td>22. CAMPO BUSQUEDA</td>
+                <td>Campo para buscar algo dentro de una página (buscador)</td>
+                <td><input type="search" name="" id=""></td>
+            </tr>
+            <tr>
+                <td>23. CAMPO telefono</td>
+                <td>Permite solo poner el numero de teléfono</td>
+                <td><input type="tel" name="" id=""></td>
+            </tr>
+            <tr>
+                <td>24. campo hora</td>
+                <td>permite poner la hora actual u hora establecida</td>
+                <td><input type="time" name="" id=""></td>
+            </tr>
+            <tr>
+                <td>25. URL</td>
+                <td>Campo para poner una dirección de paginas web (URL)</td>
+                <td><input type="url" name="" id=""></td>
+            </tr>
+            <tr>
+                <td>26. semana del año</td>
+                <td>Permite solo poner la semana y el año que desees </td>
+                <td><input type="week" name="" id=""></td>
+            </tr>
+            <tr>
+                <td>27. Lista oculta</td>
+                <td>Es una lista que autocompleta lo que sea que estes escribiendo</td>
+                <td><input list="paises" type="text">
+                <datalist id="paises">
+                    <option value="mexico"></option>
+                    <option value="españa"></option>
+                    <option value="colombia"></option>
+                </datalist></td>
+            </tr>
+            <tr>
+                <td>28.PROGRESS</td>
+                <td>Es una barra de progreso que simula cargar algo</td>
+                <td><progress id="file" max="100" value="70">70%></progress></td>
+            </tr>
+            <tr>
+                <td>29. ESTETICO</td>
+                <td>Es un borde y orden que se le pone a un formulario</td>
+                <td><fieldset>
+                    <legend>DATOS PERSONALES</legend>
+                    Nombre <br>
+                    <input type="text"> <br>
+                    Contraseña <br>
+                    <input type="password" name="" id=""> <br>
+                    Fecha de nacimiento <br>
+                    <input type="date" name="" id="">
+                </fieldset></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </table>
+    </form>
+
+
+</body>
+</html>
